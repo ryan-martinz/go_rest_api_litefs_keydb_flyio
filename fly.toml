@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for litefs-keydb-go-demo on 2023-12-31T20:32:34-06:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "litefs-keydb-go-demo"
+primary_region = "dfw"
+
+[experimental]
+  auto_rollback = true
+  enable_consul = true
+
+[build]
+
+[[mounts]]
+  source = "storage"
+  destination = "/var/lib/"
+  auto_extend_size_threshold = 0
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  processes = ["app"]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
