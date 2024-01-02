@@ -1,4 +1,4 @@
-# Golang, LiteFS, KeyDB Multi-Region Example on Fly.io
+# Golang, LiteFS, KeyDB Multi-Region REST API Example on Fly.io
 
 ## Overview
 
