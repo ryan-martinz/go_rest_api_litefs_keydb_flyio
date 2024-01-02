@@ -14,7 +14,8 @@ Example project of a multi-region Golang application using LiteFS and KeyDB, dep
 
 ## TODO
 
-- **ADD ASYNC WORKERS/TASKS**: currently looking into using Asynq.
+- **ADD ASYNC WORKERS/TASKS**: currently looking into using Asynq. 
+- **ADD AUTOMATED DB BACKUPS**: integrate litefs backups to s3 or other cloud long term storage soloution regularly. 
 
 ## Project Structure
 
